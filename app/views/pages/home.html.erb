@@ -1,4 +1,18 @@
 
+<header>
 <h1>My Portfolio Website</h1>
 
 <p>Welcome to my portfolio website!</p>
+
+<nav>
+    <ul>
+        <!-- In Rails, you instead use this method instead of <a>. -->
+        <!-- Use link_to {text you wish to represent the link}, with pagename_path 
+        referring to the path object to pagename.-->
+        <li><%= link_to 'Home', home_path %></li>
+        <li><%= link_to 'About', about_path %></li>
+        <li><%= link_to 'My Work', work_path %></li>
+        <li><%= link_to 'Contact', contact_path %></li>
+    </ul>
+</nav>
+</header>
